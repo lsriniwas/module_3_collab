@@ -1,0 +1,67 @@
+#main {
+  padding-left: 35%;
+  padding-right: 35%;
+  /* background-color: #4caf50; */
+  background-image: url("https://www.wealthandfinance-news.com/wp-content/uploads/2019/10/card.jpg");
+  background-position: center;
+  margin-top: 150px 0;
+  height: 700px;
+  padding: 0px 10%;
+  background-color: rgb(135, 211, 241);
+}
+h1 {
+  color: rgb(211, 20, 20);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.signup_border {
+  text-align: center;
+}
+
+form input {
+  padding: 10px 40px;
+  font-size: medium;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#signup,
+#signin {
+  padding: 10px 70px;
+  border-radius: 5px;
+  border-color: none;
+}
+
+.overpage {
+  margin-left: -160px;
+  width: 99.9%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.content {
+  padding: 20px;
+  width: 500px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  position: relative;
+}
+.content input {
+  width: 50%;
+  display: block;
+  margin: 10px auto;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 30px;
+  transform: rotate(45deg);
+}
+.close a {
+  text-decoration: none;
+}
