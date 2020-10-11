@@ -3,6 +3,7 @@ var name;
 var email;
 var password;
 var date;
+
     function loaddata(key){
     return JSON.parse(localStorage.getItem(key));
     }
@@ -16,15 +17,10 @@ var date;
         form.addEventListener('submit',submit)
     })
 
-    var signin=document.getElementById('signin')
-    signin.addEventListener('click',change)
- 
-    document.querySelector('.close').addEventListener('click',function(){
-        event.preventDefault();
-        document.querySelector('.overpage').style.display='none'
-    })
+  
+   
     
-
+//Main function after signing up
 function submit(){
     event.preventDefault();
     var form=new FormData(event.target)
@@ -33,7 +29,9 @@ function submit(){
      password=form.get('password')
      date=Date();
     var c=false;
-        if(array.length!=0){
+
+        if(array.length!=0){//if there are no data available in the local storage go to line no- 62 
+                            // else enter below block
        
                      //checking whether the user already exsists or not
             for(var i=0;i<array.length;i++){
@@ -43,17 +41,20 @@ function submit(){
                     }          
              }
              
+                //if the user already exsits prints below msg
                 if(c){
                         var showerror=document.getElementById('showerror')
                         showerror.textContent='user already exists'
                       } 
-                 else
+                //if email and password matches moving to dashboard.html
+                else
                 {   
                     document.querySelector('form').reset();
                     var showerror=document.getElementById('showerror')
+                    localStorage.setItem('present_user',JSON.stringify(email));
                     showerror.textContent="";
                     details();
-                    location.assign("file:///C:/Users/D%20E%20L%20L/Desktop/Project/signin.html")
+                    location.assign("file:///C:/Users/D%20E%20L%20L/Desktop/ledger/ledger.html")
                 }          
         }
         else if(array.length==0){
@@ -66,6 +67,9 @@ function submit(){
     
 }
 
+/* getting the details (name//email//password) and pushing it to global array
+    and storing it to the local storage
+*/
 function details(){
     var customerDetails= {
         name: name,
@@ -82,11 +86,25 @@ function details(){
 }
 
 
+document.querySelector('.close').addEventListener('click',function(){
+    event.preventDefault();
+    document.querySelector('.overpage').style.display='none'
+})
+
+
+var signin=document.getElementById('signin')
+signin.addEventListener('click',change)
+
+
+
+// Sign IN page POPs UP
 function change(){
     document.querySelector('.overpage').style.display='flex';
 
 }
 
+
+// checking SIGN IN part 
 document.querySelector('.content form').addEventListener('submit',function(){
    event.preventDefault();
     var form= new FormData(event.target)
@@ -110,7 +128,8 @@ document.querySelector('.content form').addEventListener('submit',function(){
         }
 
         if(check){
-            location.assign("file:///C:/Users/D%20E%20L%20L/Desktop/Project/signin.html")
+            localStorage.setItem('present_user',JSON.stringify(email));
+            location.assign("file:///C:/Users/D%20E%20L%20L/Desktop/ledger/ledger.html")
         }
         else{
             if(email_check)
