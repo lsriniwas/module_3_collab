@@ -1,6 +1,6 @@
 ## Expense Manager
 
->A simple website to handle a users Expense and displays according to the users choices
+>A simple website to handle users Expense and displays according to the user's choice.
 <<All transactions//Credits//Debits>>
 
 ![screenshot](./images/signup.png)
