@@ -1,4 +1,4 @@
-#Expense Manager
+## Expense Manager
 
 >A simple website to handle a users Expense and displays according to the users choices <<All transactions//Credits//Debits>>
 
