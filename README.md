@@ -5,6 +5,9 @@
 
 ![screenshot](./images/signup.png)
 ![screenshot](./images/signin.png)
+![screenshot](./images/dashboard.png)
+![screenshot](./images/ledger.png)
+
 
 ## Built With
 
