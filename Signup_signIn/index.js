@@ -54,7 +54,7 @@ function submit(){
                     localStorage.setItem('present_user',JSON.stringify(email));
                     showerror.textContent="";
                     details();
-                    location.assign("file:///C:/Users/D%20E%20L%20L/Desktop/ledger/ledger.html")
+                    location.assign("ledger.html")
                 }          
         }
         else if(array.length==0){
@@ -129,7 +129,7 @@ document.querySelector('.content form').addEventListener('submit',function(){
 
         if(check){
             localStorage.setItem('present_user',JSON.stringify(email));
-            location.assign("file:///C:/Users/D%20E%20L%20L/Desktop/ledger/ledger.html")
+            location.assign("ledger.html")
         }
         else{
             if(email_check)
@@ -147,6 +147,4 @@ document.querySelector('.content form').addEventListener('submit',function(){
             }
             
         }
-
-   console.log(email,password)
 })
