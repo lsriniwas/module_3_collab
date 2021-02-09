@@ -17,3 +17,4 @@
 - HTML and CSS.
 - Javascript
 - Font awesome and Google Font.
+- localStorage
