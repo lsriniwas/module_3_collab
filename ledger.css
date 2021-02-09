@@ -1,0 +1,150 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.emptyTrans {
+  font-size: 20px;
+  color: red;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgb(115, 225, 245, 0.8),
+      rgb(115, 225, 245, 0.8)
+    ),
+    url("https://content.fortune.com/wp-content/uploads/2014/08/maxresdefault.jpg");
+  background-size: cover;
+}
+.main{
+  height: 100%;
+  margin: 0px 20px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+.navbar div {
+  width: 33%;
+  font-size: 42px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1;
+  word-break: break-word;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  align-items: center;
+}
+.box1,
+.box2,
+.box3 {
+  margin: auto;
+  height: 60px;
+  width: 550px;
+  background-color: white;
+  outline: none;
+  border-radius: 4px;
+}
+.box1 {
+  color: greenyellow !important;
+}
+.box2 {
+  color: red !important;
+}
+.box3 {
+  color: black !important;
+}
+.welcome {
+  margin-top: 30px;
+  clear: both;
+}
+h1 {
+  font-size: 4.25rem;
+  font-weight: 300;
+  color: black;
+  font-family: "Rubik", sans-serif;
+}
+.trans {
+  display: flex;
+}
+.trans div {
+  width: 45%;
+}
+.five {
+  height: 400px;
+}
+.entrydata {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+table {
+  width: 100%;
+}
+td {
+  width: 50px;
+  background-color: white;
+}
+.entry {
+  display: flex;
+  justify-content: center;
+}
+.entry input {
+  font-size: 20px;
+  outline: none;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+}
+.form {
+  padding: 5px;
+}
+#title,
+#amount {
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  outline: white;
+}
+h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#button {
+  width: 250px;
+  padding: 5px;
+  background-color: tomato;
+  border-radius: 5px;
+}
+button {
+  height: 50px;
+}
+.overpage {
+  margin-left: -10px;
+  width: 89%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.ledgers {
+  padding: 20px;
+}
+.details_ledger {
+  margin-top: 10px;
+
+  border: 1px solid red;
+}
+.details_ledger table {
+  margin-left: -20px;
+  position: absolute;
+}
+.details_ledger table td {
+  padding: 10px;
+}
+.details_ledger table th {
+  font-size: medium;
+  font-family: sans-serif;
+  color: yellow;
+}

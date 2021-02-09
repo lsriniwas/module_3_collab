@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ledger</title>
+</head>
+<link rel="stylesheet" href="ledger.css">
+<body>
+    <div class='main'>
+      
+            <div class="navbar">
+                    <div>Total Income
+                        ₹<div class="box1">
+                            0
+                        </div>
+                    </div>
+                    <div>Total Expense
+                        ₹  <div class="box2">
+                            0
+                        </div>
+                    </div>
+                    <div>Balance
+                        ₹  <div class="box3">
+                            0
+                        </div>
+                    </div>
+            </div>
+        <div class="welcome">
+            <h1></h1>
+        </div>
+        <div class="trans">
+            <div class="five">Transactions**
+                <table>
+                   
+                        <tr>
+                            <th>Title</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+                    
+                        <tbody>
+                            <tr class="emptyTrans" >
+                                <td colspan='4'> <p >No Transactions to show</p></td>
+                            <tr>
+                        </tbody>
+                </table>
+            </div>
+            <div class="entry">
+                <div class="form">
+                    <h2>Add new transaction</h2>
+                <form action="">
+                    <div><span class="entrydata">Title:</span><input type="text" name="title" id="title" minlength="3" placeholder="Enter Title" required></div>
+                    <div><input type="radio" name="type" id="" value="credit" required>Credit</div>
+                    <div><input type="radio" name="type" id="" value="debit" required>Debit</div>
+                </br>
+                    <div><span class="entrydata"> Amount:</span><input type="number" name="amount" id="amount" placeholder="Enter Amount" required></div>
+                    <div><input type="submit" value="submit" id='button'></div>
+                </form>
+            </div>
+            </div>
+            <button><h3>LEDGER</h3></button>
+            <button id='logout'><h3>LogOut</h3></button>
+        </div>
+        <div class="overpage">
+              <div class="ledgers">
+                  <div>
+                    <button id="all_ledger" onclick="allLedgerHandle()">All Transactions</button>
+                    <button id="credit_ledger" onclick="allLedgerCreditHandle()">Only Credit</button>
+                    <button id="debit_ledger" onclick="allLedgerdebitHandle()">Only Debit</button>
+                  </div>
+                    <div class="details_ledger">
+                        <table>
+                        </table>
+                    </div>
+       
+             </div>
+            
+             
+        </div> 
+    </div>
+    <script src="ledger.js"></script>
+</body>
+</html>
